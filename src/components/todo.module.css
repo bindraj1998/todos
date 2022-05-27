@@ -1,0 +1,46 @@
+.flix{
+display: flex;
+margin-left: 25%;
+width: 250px;
+/* border: 1px solid red; */
+height: 30px;
+justify-content: space-between;
+background-color: white;
+margin-top: 5px;
+}
+.s{
+    text-decoration: line-through;
+}
+.main{
+    border: 1px solid red;
+    width: 60%;
+    height: 300px;
+    background-color:#cecece ;
+    margin: auto;
+    margin-top: 40px;
+}
+.input{
+font-size: 20px;
+border-radius: 10px;
+border: none;
+}
+/* .inflix{
+   justify-content: space-around;
+   border: 1px solid blue; 
+   width: 50%;
+   margin: auto;
+} */
+.button{
+   font-size: 20px;
+   width: 70px; 
+   margin-left: 20px;
+   border-radius: 10px;
+   border: none;
+}
+.top{
+margin-top: 20px;
+}
+.delete{
+   border-radius: 10px;
+   border: none; 
+}
