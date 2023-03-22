@@ -1,21 +1,19 @@
 import React,{useState} from 'react'
 import styles from "./todo.module.css"
 
-const Todoitem = ({todo ,ondelete}) => {
+const Todoitem = ({todo ,ondelete,setiscomp}) => {
 
 
-    const[iscomp,setiscomp]=useState(todo.iscompleted)
       
-
   return (
     <div className={styles.flix} key={todo.id}>
-{/* <input type="checkbox"
- checked={iscomp}
- onChange={(e)=>{setiscomp(!iscomp)}}
+<input type="checkbox"
+ checked={todo.status}
+ onChange={()=>setiscomp(todo.id,!todo.status)}
 
-/> */}
-<div className={iscomp ? styles.s:""} style={{fontSize:20,marginLeft:5}}>{todo.value}</div>
-   <button className={styles.delete}  onClick={()=>ondelete(todo.id)}><input style={{font:20}} type="radio"/></button>  
+/>
+<div className={todo.status ? styles.s:""} style={{fontSize:20,marginLeft:5}}>{todo.value}</div>
+   <button   onClick={()=>ondelete(todo.id)}>DELETE TODO</button>  
     </div>
   )
 }
